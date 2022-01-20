@@ -104,7 +104,7 @@
 //     console.log(i);
 //     i=i+1;
 
-    
+
 // }
 // console.log("While")
 
@@ -120,7 +120,7 @@
 
 // for (let k =0 ; k <10; k++) {
 //  console.log(k);
-    
+
 // }
 // console.log("For")
 
@@ -130,16 +130,45 @@
 
 // for (let triangolo  = '#';  triangolo<7 ; triangolo++) {
 //    console.log(triangolo);
-    
+
 // }
 
 
-let i='#'
-while (!(i==='########')) {
+let i = '#'
+while (!(i === '########')) {
     console.log(i);
-    i=i+'#'
-    
+    i = i + '#'
+
 }
 
+// CONTROLLO NUMERI DIVISIBILI PER 3 E PER 5
+for (let i = 1; i < 100; i++) {
+    let str = '';
+    if (i % 3 === 0) {
+        str += 'Fritz';
+    } else if (i % 5 === 0) {
+        str += 'Buzz';
+    }
+    console.log(str.length > 0 ? str : i);
+}
 
+let grid = ` `;
+
+for (let i = 0; i < 8; i++) {
+    for (let j = 0; j < 8; j++) {
+        grid = grid + " #", ' ';
+        //console.log(`Linea ${i}, carattere ${j}`);
+    }
+    if (grid.length == 100) {
+        break;
+    } else {
+        grid = grid + '\n';
+    }
+}
+
+console.log(grid);
+
+
+
+// scacchiera 8x8
 
