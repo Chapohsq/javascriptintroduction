@@ -134,40 +134,51 @@
 // }
 
 
-let i = '#'
-while (!(i === '########')) {
-    console.log(i);
-    i = i + '#'
+// let i = '#'
+// while (!(i === '########')) {
+//     console.log(i);
+//     i = i + '#'
 
-}
+// }
 
-// CONTROLLO NUMERI DIVISIBILI PER 3 E PER 5
-for (let i = 1; i < 100; i++) {
-    let str = '';
-    if (i % 3 === 0) {
-        str += 'Fritz';
-    } else if (i % 5 === 0) {
-        str += 'Buzz';
-    }
-    console.log(str.length > 0 ? str : i);
-}
+// // CONTROLLO NUMERI DIVISIBILI PER 3 E PER 5
+// for (let i = 1; i < 100; i++) {
+//     let str = '';
+//     if (i % 3 === 0) {
+//         str += 'Fritz';
+//     } else if (i % 5 === 0) {
+//         str += 'Buzz';
+//     }
+//     console.log(str.length > 0 ? str : i);
+// }
 
-let grid = ` `;
+// let grid = ``;
 
-for (let i = 0; i < 8; i++) {
-    for (let j = 0; j < 8; j++) {
-        grid = grid + " #", ' ';
-        //console.log(`Linea ${i}, carattere ${j}`);
-    }
-    if (grid.length == 100) {
-        break;
-    } else {
-        grid = grid + '\n';
-    }
-}
+// for (let i = 0; i < 8; i++) {
+//     for (let j = 0; j < 8; j++) {
 
-console.log(grid);
+// if (i%2===0) {
+//     if (j%2===0) {
+//         grid+=' ';
+//     }else{
+// grid+='#';
 
+//     }
+
+
+//     }if (j%2===0) {
+//         grid+='#'
+//     } else {
+//         grid+=' '
+//     }
+ 
+// }
+// grid+='\n'
+//         console.log(`Linea ${i}, carattere ${j}`);
+
+
+// console.log(grid);
+// }
 
 
 // scacchiera 8x8
