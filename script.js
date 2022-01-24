@@ -183,3 +183,78 @@
 
 // scacchiera 8x8
 
+let firstArray = [1, true, "pippo"];
+
+console.log(firstArray);
+
+let secondArray = ["pippo", "pluto", "paperino"];
+
+console.log(secondArray.length);
+
+for (let i = 0; i < secondArray.length; i++) {
+    const element = secondArray[i];
+    console.log(element);
+    
+}
+
+for (const element of secondArray) {
+    console.log(element);
+}
+
+// LIFO
+secondArray.push("topolino");
+
+console.log(secondArray);
+
+let ultimoElemento = secondArray.pop();
+
+console.log(secondArray);
+console.log(ultimoElemento);
+
+// FIFO
+let primoElemento = secondArray.shift();
+console.log(secondArray);
+console.log(primoElemento);
+
+secondArray.unshift("paperone");
+console.log(secondArray);
+
+console.log(secondArray[1]);
+
+secondArray[1] = "paperina";
+console.log(secondArray);
+
+//
+
+let thirdArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let subArray = thirdArray.slice(2, 5);
+
+// console.log(subArray);
+// console.log(thirdArray);
+
+// let spliceArray = thirdArray.splice(2, 3, 12, 13, 14);
+
+// console.log(spliceArray);
+// console.log(thirdArray);
+
+let numeroPiuGrande = Math.max(-5, -10, -2);
+console.log(numeroPiuGrande);
+
+let numeroPiuGrandeArray = Math.max(...thirdArray);
+console.log(numeroPiuGrandeArray);
+
+function StringPiuLunga(...stringhe){
+
+    let str = "";
+
+    for (let i = 0; i < stringhe.length; i++) {
+        const element = stringhe[i];
+        if (str.length < element.length) {
+            str = element;
+        }
+    }
+
+    return str;
+}
+
+console.log(StringPiuLunga("pippo", "pluto", "topolino"));

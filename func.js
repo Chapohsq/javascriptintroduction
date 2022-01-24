@@ -48,7 +48,7 @@
 // function multiplyBy4(firstNumber){
 //     function multiplyBy2(secondNumber){
 //     return secondNumber*2;
-    
+
 //     }
 
 //     let result=multiplyBy2(firstNumber)*2;
@@ -74,7 +74,7 @@
 
 // function applicafunzioneSuNumero(mioNumero,funzioneDaApplicare) {
 //     return funzioneDaApplicare(mioNumero)
-    
+
 // }
 
 // function DividiPer2(numero2) {
@@ -116,7 +116,7 @@
 // let num2=5;
 // if (num1<num2) {
 //     console.log(num1)
-    
+
 // }else {
 // console.log(num2)
 
@@ -185,37 +185,71 @@ console.log("Le occorrenze della lettera B nella parola sono " + countChar("kakk
 
 //Funzione non ricorsiva che scrive i primi 100 numeri
 
-function fibonacciNonRicorsivo (number){
-    let i = 0,
-        j = 1,
-        k;
-    while (i < number) {
-        console.log(i);
-        k = i + j;
-        i = j;
-        j = k;
-    }
-}
+// function fibonacciNonRicorsivo (number){
+//     let i = 0,
+//         j = 1,
+//         k;
+//     while (i < number) {
+//         console.log(i);
+//         k = i + j;
+//         i = j;
+//         j = k;
+//     }
+// }
 
-fibonacciNonRicorsivo(100);
+// fibonacciNonRicorsivo(100);
 
 //Fibonacci non ricorsivo senza numero specifico (data la posizione restituisci numero)
+let f0 = 0;
+let f1 = 1;
 
-function fibonacciNonRicorsivo (number){
-    let indice = 0,
-        indice2 = 1,
-        posizione = 0,
-        indice3;
-    do {
-        posizione++;
-        indice3 = indice + indice2;
-        indice = indice2;
-        indice2 = indice3;
-    } while (indice < number);
-    return pos;
+function fibonacciNonRicorsivo() {
+    for (let i = 0; i < 101; i++) {
+
+        if (i === 0) {
+
+            console.log(0);
+            continue;
+        }
+        if (i === 1); {
+
+            console.log(1);
+            continue;
+        }
+ 
+
+        let f = f1 + f0;
+        console.log(f);
+        continue;
+    
+
+    f0 = f1;
+    f1 = f
 }
+}
+  fibonacciNonRicorsivo();
 
-console.log(fibonacciNonRicorsivo(100));
 
 //Funzione (ricorsiva o meno) che dato un numero mi individui la sua posizione nella successione di Fibonacci, se non c'è numero undefined
 //Funzione ricorsiva fattoriale
+
+
+function fattorialeNonRic(numero){
+
+    let result = 1;
+
+    if (numero === 0) {
+        return 1;
+    }
+
+    for (let i = 1; i <= numero; i++) {
+
+        if(i === numero){
+            return numero * result;
+        }
+
+        result = i * result; 
+    }
+}
+
+console.log(fattorialeNonRic(1));
