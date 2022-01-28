@@ -43,3 +43,6 @@ function CalcolaTriangoloRettangolo(catetoMaggiore, catetoMinore, ipotenusa){
 let dimensioniTriangolo = CalcolaTriangoloRettangolo(4, 3, 5);
 
 console.log(dimensioniTriangolo.perimetro + " e l'area: " + dimensioniTriangolo.area);
+
+
+
